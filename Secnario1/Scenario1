@@ -1,1 +1,33 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+							Scenario 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[List of files that are to be used to execute scenario 1]
 
+of_tutorial.py
+
+++++++++++++++++++++++
+Location to copy files
+++++++++++++++++++++++
+
+<of_tutorial.py> - <~/pox/pox/misc>
+
+[Destination to be provided for each file that is relevant to scenario 1]
+
+++++++++++++++++
+Commands to Run: 
+
+./pox.py log.level --DEBUG misc.of_tutorial
+
+sudo mn --topo single,3 --mac --controller remote --switch ovsk
+
+++++++++++++++++
+[Any special instructions we need to follow before running commands you will mention below for scenario 1]
+[List of commands to run before we execute the test cases of scenario 1]
+
+Suppose we are in home (We can use command: "cd" to go into home)
+
+First, we need to entry pox file using command: "cd pox" and then use command: "./pox.py log.level --DEBUG misc.of_tutorial" to run the of_tutorial2.py.
+
+Second, we need to open another terminal and entry custom file using command: "cd mininet/custom" and then use command: "sudo mn --topo single,3 --mac --controller remote --switch ovsk" to run the default topology.
+
+Finally, we can use ping or iperf to check the function of the controller.
