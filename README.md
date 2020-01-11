@@ -6,6 +6,28 @@ In this project, we need to bulid a SDN controller. We will be having a dumb/sim
 There are four scenarios to do.
 
 Scenario 1:
+
+    of_tutorial.py: It is the learning switch controller for Scenario 1.
+
+Scenario 2:
+    
+    topology2.py: It is the topology for Scenario 2.
+    
+    controller2.py: It is the controller for Scenario 2.
+
+Scenario 3:
+
+    topology3.py: It is the topology for Scenario 3.
+    
+    controller3.py: It is the controller for Scenario 3.
+
+Scenario 4: 
+
+    topology4.py: It is the topology for Scenario 4.
+    
+    controller4.py: It is the controller for Scenario 4.
+ 
+Scenario 1:
 In the first scenario, we need to design a controller which function is to act as a layer 2 switch. This scenario gives us the hub function for an example. The hub function is that we need to flood every frame when it goes to the hub. The difference between switch and hub is that we need to use mac to port dictionary to remember every frame’s source mac address when it goes into switch. When some other port wants to send frame, the switch can directly send the frame to that host rather than flooding it. After every flow, we can use msg.match and flow_mod() to install rules in switch. It can increase the bandwidth.
 
 Scenario 2:
